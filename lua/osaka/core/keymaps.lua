@@ -3,9 +3,10 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- general keymaps
+keymap.set("n", "<ESC>", ":nohl<CR><ESC>")
 keymap.set("i", "jk", "<ESC>")
-keymap.set("n", "<leader>nh", ":nohl<CR>")
-keymap.set("n", "x", "_x")
+keymap.set("n", "nh", ":nohl<CR>")
+-- keymap.set("n", "x", "_x")
 
 -- incremente/decrement
 keymap.set("n", "+", "<C-a>")
@@ -53,3 +54,7 @@ keymap.set("n", "dv", ":DiffviewOpen")
 
 -- lazygit
 keymap.set("n", "<C-g>", ":LazyGit<CR>")
+
+keymap.set("n", "bd", ":bdelete!<CR>")
+keymap.set("n", "bn", ":bnext<CR>")
+keymap.set("n", "bp", ":bprevious<CR>")
