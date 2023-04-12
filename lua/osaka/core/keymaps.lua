@@ -55,6 +55,6 @@ keymap.set("n", "dv", ":DiffviewOpen")
 -- lazygit
 keymap.set("n", "<C-g>", ":LazyGit<CR>")
 
-keymap.set("n", "bd", ":bdelete!<CR>")
-keymap.set("n", "bn", ":bnext<CR>")
-keymap.set("n", "bp", ":bprevious<CR>")
+keymap.set("n", "<C-w>", ":bdelete!<CR>")
+keymap.set("n", "<C-tab>", ":bnext<CR>")
+keymap.set("n", "<S-tab>", ":bprevious<CR>")
