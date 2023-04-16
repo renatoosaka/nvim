@@ -81,7 +81,7 @@ return packer.startup(function(use)
 		end,
 	})
 
-	use("norcalli/nvim-colorizer.lua")
+	use("NvChad/nvim-colorizer.lua")
 
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
