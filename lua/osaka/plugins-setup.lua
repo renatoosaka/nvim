@@ -105,6 +105,8 @@ return packer.startup(function(use)
 
 	use("github/copilot.vim")
 
+	use("tversteeg/registers.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
