@@ -103,6 +103,8 @@ return packer.startup(function(use)
 	use("kdheepak/lazygit.nvim") -- open lazygit inside neovim
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
+	use("github/copilot.vim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
