@@ -12,6 +12,8 @@ keymap.set("n", "nh", ":nohl<CR>")
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
+keymap.set("n", "<C-n>", ":enew<CR>")
+
 -- split window
 keymap.set("n", "ss", ":split<CR><C-w>w")
 keymap.set("n", "sv", ":vsplit<CR><C-w>w")
