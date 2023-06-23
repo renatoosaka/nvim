@@ -107,6 +107,8 @@ return packer.startup(function(use)
 
 	use("tversteeg/registers.nvim")
 
+	use("tpope/vim-fugitive")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

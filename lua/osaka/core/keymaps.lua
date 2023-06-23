@@ -46,7 +46,7 @@ keymap.set("n", "<C-b>", ":NvimTreeToggle<CR>")
 
 -- telescope
 keymap.set("n", "ff", "<cmd>Telescope find_files<cr>")
-keymap.set("n", "fs", "<cmd>Telescope live_grep<cr>")
+keymap.set("n", "fs", "<cmd>lua require('telescope.builtin').live_grep({ additional_args = { '-j1' }})<CR>")
 keymap.set("n", "fc", "<cmd>Telescope grep_string<cr>")
 keymap.set("n", "fb", "<cmd>Telescope buffers<cr>")
 keymap.set("n", "fh", "<cmd>Telescope help_tags<cr>")
